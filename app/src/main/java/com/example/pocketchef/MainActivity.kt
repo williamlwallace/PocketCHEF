@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
         val recipes = ArrayList<Recipe>()
 
         recipes.add(Recipe("Spaghetti Bolognese", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
-        recipes.add(Recipe("Chicken and Mushroom Fettucine",30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
-        recipes.add(Recipe("Beef Vindaloo", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
-        recipes.add(Recipe("Chilli Con Carne", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
-        recipes.add(Recipe("Sheperd's Pie",30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
-        recipes.add(Recipe("Spicy Miso Ramen", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Chicken and Mushroom Fettucine",50, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Beef Vindaloo", 45, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Chilli Con Carne", 40, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Sheperd's Pie",90, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Spicy Miso Ramen", 60, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
 
         val adapter = CustomAdapter(recipes)
 

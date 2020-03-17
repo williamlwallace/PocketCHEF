@@ -33,6 +33,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:paddingBottom="15dp"
+        android:transitionName="logo"
         app:layout_constraintEnd_toStartOf="@+id/title"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
