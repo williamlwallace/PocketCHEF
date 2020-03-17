@@ -2,6 +2,8 @@ package com.example.pocketchef
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,12 +20,12 @@ class MainActivity : AppCompatActivity() {
 
         val recipes = ArrayList<Recipe>()
 
-        recipes.add(Recipe("Spaghetti Bolognese"))
-        recipes.add(Recipe("Chicken and Mushroom Fettucine"))
-        recipes.add(Recipe("Beef Vindaloo"))
-        recipes.add(Recipe("Chilli Con Carne"))
-        recipes.add(Recipe("Sheperd's Pie"))
-        recipes.add(Recipe("Spicy Miso Ramen"))
+        recipes.add(Recipe("Spaghetti Bolognese", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Chicken and Mushroom Fettucine",30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Beef Vindaloo", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Chilli Con Carne", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Sheperd's Pie",30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Spicy Miso Ramen", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
 
         val adapter = CustomAdapter(recipes)
 

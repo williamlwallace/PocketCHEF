@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 class CustomAdapter (val recipeList: ArrayList<Recipe>) : RecyclerView.Adapter<CustomAdapter.ViewHolder> () {
 
     class ViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textViewName = itemView.findViewById<TextView>(R.id.textViewName)
+        val recipeName = itemView.findViewById<TextView>(R.id.recipeName)
+        val recipeTime = itemView.findViewById<TextView>(R.id.recipeTime)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -24,6 +25,7 @@ class CustomAdapter (val recipeList: ArrayList<Recipe>) : RecyclerView.Adapter<C
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val recipe: Recipe = recipeList[position]
 
-        holder.textViewName?.text = recipe.name
+        holder.recipeName?.text = recipe.name
+        holder.recipeTime?.text = recipe.time.toString() + " minutes"
     }
 }
