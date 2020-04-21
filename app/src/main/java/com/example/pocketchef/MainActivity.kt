@@ -2,9 +2,7 @@ package com.example.pocketchef
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
-import android.widget.LinearLayout
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -26,9 +24,11 @@ class MainActivity : AppCompatActivity() {
         recipes.add(Recipe("Chilli Con Carne", 40, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
         recipes.add(Recipe("Sheperd's Pie",90, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
         recipes.add(Recipe("Spicy Miso Ramen", 60, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
+        recipes.add(Recipe("Mac n Cheese", 30, arrayListOf("Spaghetti", "Mince"), arrayListOf("Blah", "blah")))
 
-        val adapter = CustomAdapter(recipes)
-
+        val adapter = RecipeAdapter(recipes)
         recyclerView.adapter = adapter
+
+        val addRecipeButton = findViewById<Button>(R.id.addRecipeButton)
     }
 }

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter (val recipeList: ArrayList<Recipe>) : RecyclerView.Adapter<CustomAdapter.ViewHolder> () {
+class RecipeAdapter (val recipeList: ArrayList<Recipe>) : RecyclerView.Adapter<RecipeAdapter.ViewHolder> () {
 
     class ViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
         val recipeName = itemView.findViewById<TextView>(R.id.recipeName)
