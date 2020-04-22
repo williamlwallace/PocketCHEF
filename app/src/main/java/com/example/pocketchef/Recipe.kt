@@ -1,6 +1,10 @@
 package com.example.pocketchef
 
-data class Recipe(val name: String,
-                  val time: Int,
-                  val ingredients: ArrayList<String>,
-                  val method: ArrayList<String>)
+import java.io.Serializable
+
+data class Recipe(var name: String,
+                  var time: String,
+                  var ingredients: ArrayList<String>,
+                  var method: ArrayList<String>) : Serializable {
+
+}
