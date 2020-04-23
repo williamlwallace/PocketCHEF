@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">PocketCHEF</string>
+    <string name="recipes">Recipes</string>
+    <string name="add_recipe_button">Add Recipe</string>
+    <string name="add_new_recipe_title">Add New Recipe</string>
+    <string name="recipe_name">Name</string>
+    <string name="recipe_name_edit_text">Enter your recipe name</string>
+    <string name="recipe_time">Time</string>
+    <string name="recipe_time_edit_text">Enter time in minutes</string>
+    <string name="recipe_ingredients">Ingredients</string>
+    <string name="recipe_ingredients_edit_text">Add an ingredient</string>
+    <string name="recipe_method">Method</string>
+    <string name="recipe_method_edit_text">Add a step</string>
+    <string name="finish_add_recipe_button">Finish!</string>
+    <string name="recipe_name_title">Add New Recipe</string>
+    <string name="logo_text">pocketCHEF</string>
+    <string name="timerButton">Timer</string>
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PocketCHEF</string>
+    <string name="add_recipe_button">Agregar Receta</string>
+    <string name="add_new_recipe_title">Agregar Nueva Receta</string>
+    <string name="recipe_name">Nombre</string>
+    <string name="recipe_name_edit_text">Ingrese el nombre de su receta</string>
+    <string name="recipe_time">Hora</string>
+    <string name="recipe_time_edit_text">Ingrese el tiempo en minutos</string>
+    <string name="recipe_ingredients">Ingredientes</string>
+    <string name="recipe_ingredients_edit_text">Agregar un ingrediente</string>
+    <string name="recipe_method">Método</string>
+    <string name="recipe_method_edit_text">Agrega un paso</string>
+    <string name="finish_add_recipe_button">¡Terminar!</string>
+    <string name="recipe_name_title">Agregar Nueva Receta</string>
+    <string name="logo_text" translatable="false">bolsilloCHEF</string>
+    <string name="recipes">Recetas</string>
+    <string name="timerButton">"Temporizador "</string>
+</resources>

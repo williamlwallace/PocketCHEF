@@ -13,7 +13,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/advent_pro_bold"
         android:paddingBottom="15dp"
-        android:text="Add New Recipe"
+        android:text="@string/add_new_recipe_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/advent_pro_medium"
                 android:padding="10dp"
-                android:text="Name"
+                android:text="@string/recipe_name"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -68,7 +68,7 @@
                 android:layout_weight="0"
                 android:ems="10"
                 android:fontFamily="@font/advent_pro"
-                android:hint="Enter your recipe name"
+                android:hint="@string/recipe_name_edit_text"
                 android:inputType="textPersonName"
                 android:padding="10dp" />
 
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/advent_pro_medium"
                 android:padding="10dp"
-                android:text="Time"
+                android:text="@string/recipe_time"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -94,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:fontFamily="@font/advent_pro"
-                android:hint="Enter time in minutes"
+                android:hint="@string/recipe_time_edit_text"
                 android:inputType="number" />
 
         </LinearLayout>
@@ -117,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/advent_pro_medium"
                     android:padding="10dp"
-                    android:text="Ingredients"
+                    android:text="@string/recipe_ingredients"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
@@ -127,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:fontFamily="@font/advent_pro"
-                    android:hint="Add an ingredient"
+                    android:hint="@string/recipe_ingredients_edit_text"
                     android:inputType="textPersonName"
                     android:padding="10dp" />
             </LinearLayout>
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/advent_pro_medium"
                     android:padding="10dp"
-                    android:text="Method"
+                    android:text="@string/recipe_method"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
@@ -166,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:fontFamily="@font/advent_pro"
-                    android:hint="Add a step"
+                    android:hint="@string/recipe_method_edit_text"
                     android:inputType="textPersonName"
                     android:padding="10dp" />
             </LinearLayout>
@@ -188,7 +188,7 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/button"
             android:fontFamily="@font/advent_pro_medium"
-            android:text="Finish!"
+            android:text="@string/finish_add_recipe_button"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textSize="15sp" />
     </LinearLayout>

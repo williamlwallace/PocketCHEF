@@ -36,8 +36,8 @@ class RecipeAdapter (val recipeList: ArrayList<Recipe>, val clickListener: OnIte
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val recipe: Recipe = recipeList[position]
-        holder.recipeName?.text = recipe.name.capitalize()
-        holder.recipeTime?.text = recipe.time.toString() + " minutes"
+        holder.recipeName?.text = recipe.name
+        holder.recipeTime?.text = "${recipe.time} minutes"
         holder.bind(recipe, clickListener)
     }
 

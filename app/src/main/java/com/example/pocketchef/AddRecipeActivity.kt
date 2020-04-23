@@ -2,15 +2,17 @@ package com.example.pocketchef
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Build
 import android.os.Bundle
-import android.util.Log
+import android.os.VibrationEffect
+import android.os.Vibrator
 import android.view.KeyEvent
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.example.pocketchef.MainActivity.GlobalVariable.recipes
-import com.google.firebase.database.*
 import com.google.gson.Gson
+
 
 class AddRecipeActivity : AppCompatActivity() {
 
@@ -97,8 +99,15 @@ class AddRecipeActivity : AppCompatActivity() {
                 Toast.makeText(this, "Added new recipe!", Toast.LENGTH_LONG).show()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
-                overridePendingTransition(R.anim.slide_out_left, R.anim.slide_in_right)
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
             } else {
+                val v =
+                    getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    v.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE))
+                } else {
+                    v.vibrate(500)
+                }
                 Toast.makeText(this,"Please fill out all the fields!", Toast.LENGTH_SHORT).show()
             }
 
@@ -108,7 +117,8 @@ class AddRecipeActivity : AppCompatActivity() {
 
 
     }
-    
+
+
 
     override fun finish() {
         super.finish()
