@@ -34,11 +34,13 @@ class MainActivity : AppCompatActivity(), OnItemClickListener  {
         val sharedPreferences = getSharedPreferences("shared preferences", Context.MODE_PRIVATE)
         val gson = Gson()
         val json = sharedPreferences.getString("recipe list", null)
-        recipes = gson.fromJson(json, object : TypeToken<ArrayList<Recipe>>() {}.type)
 
-        if (recipes.isEmpty()) {
+        try {
+            recipes = gson.fromJson(json, object : TypeToken<ArrayList<Recipe>>() {}.type)
+        } catch (e: IllegalStateException) {
             recipes = ArrayList<Recipe>()
         }
+
 
         val adapter = RecipeAdapter(recipes, this)
         recyclerView.adapter = adapter
